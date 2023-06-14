@@ -24,7 +24,7 @@ Data: Data Atual
 Versão: 1.0
 #>
 
-function Subtrair {
+function Somar {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true, Position = 0)]
@@ -36,6 +36,6 @@ function Subtrair {
         [int]$numero2
     )
 
-    $resultado = $numero1 - $numero2
+    $resultado = $numero1 + $numero2
     return $resultado
 }
