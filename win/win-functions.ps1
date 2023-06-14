@@ -14,8 +14,10 @@ Autor: Seu Nome
 Data: Data Atual
 Versão: 1.0
 #>
-Get-ChildItem Env: | ForEach-Object {
-    $variavel = $_.Name
-    $valor = $_.Value
-    Write-Host "$variavel = $valor"
+function listAllEnvrionmentVar {
+    Get-ChildItem Env: | ForEach-Object {
+        $variavel = $_.Name
+        $valor = $_.Value
+        Write-Host "$variavel = $valor"
+    }
 }
